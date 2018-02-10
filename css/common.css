@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object {padding: 0; margin: 0;}
+body{ margin: 0; padding: 0; font-family:"微软雅黑" 14px;}
+img{ border: 0;}
+input{outline:none;}
+a{ text-decoration: none;}
+ul{list-style:none;}
+i,b,em{ font-style: normal;}
+/*圆角兼容ie*/
+.jianron{ position:relative; z-index:2; behavior:url(ie-css3.htc);}
+/*清除浮动  子元素浮动后 父元素加上这个类名 清除浮动*/
+.clearfix:after{content:"";display:block;width:0;clear:both;}
+.clearfix{zoom:1;}
+.left{float:left !important;}
+.right{float:right !important;}
+
+/*字体*/
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1476241190'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1476241190#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1476241190') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1476241190') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1476241190#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-tishi:before { content: "\e714"; }
+.icon-jian:before { content: "\e604"; }
+.icon-sousuo-copy:before { content: "\e60a"; }
+.icon-zan:before { content: "\e65e"; }
+.icon-cai:before { content: "\e62d"; }
+.icon-jiantou:before { content: "\e631"; }
+.icon-jiantou1:before { content: "\e60f"; }
+/*用法： 提示 &#xe714; 减 &#xe604; 搜索 &#xe60a; 赞 &#xe65e; 踩 &#xe62d; 箭头往左 &#xe631; 箭头右 &#xe60f;*/
+
+@font-face {
+	font-family:"李旭科书法1.4";
+	src:url(../fonts/%E6%9D%8E%E6%97%AD%E7%A7%91%E4%B9%A6%E6%B3%951.4.ttf);
+}
+/*透明度兼容*/
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+  .header-nav-select{
+    background-color:rgb(0,0,0);
+    filter:Alpha(opacity=70);
+    /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+  }
+  .header-nav-select a{
+    position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+  }  
+}
+/*头部导航*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  border-bottom: 1px solid red;
+}
+.ul-container{
+  width: 1100px;
+  height: 54px;
+  line-height: 54px;
+  padding: 22px 0;
+  margin: 0 auto;
+}
+.header-nav > li{
+  position: relative;
+  float: left;
+}
+
+.ul-container > ul > li> a{
+  font-size: 16px;
+  color: #999;
+  height:45px;
+  padding:8px 34px;
+}
+.header-nav .active{
+  color: #fff;
+  background-color: #ff790b;
+  border-radius: 5px 5px 0 0;
+}
+.dropdown-menu{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ff790b;
+  padding-bottom:5px;
+  display: none;
+  border-radius: 0 0 5px 5px;
+}
+.dropdown-menu > li{
+  height: 30px;
+  line-height: 30px;
+}
+.dropdown-menu > li > a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+.dropdown-menu > li > a:hover{
+  background-color: rgba(255,255,255,0.3);
+}
