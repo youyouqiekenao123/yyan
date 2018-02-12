@@ -5,7 +5,7 @@ $(document).ready(function(){
             $(this).find(".dropdown-menu").slideDown();
             $(this).find("a:first-child").addClass("active");
         }, function() {
-            $(this).find(".dropdown-menu").slideUp();
+            $(this).find(".dropdown-menu").hide();
             $(this).find("a:first-child").removeClass("active");
         });
     });
