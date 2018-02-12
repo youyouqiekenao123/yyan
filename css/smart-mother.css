@@ -1,0 +1,55 @@
+
+.main-content-foot{
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.smart-mother-left-list{
+    width: 330px;
+    height: 395px;
+    background: url("../images/smart-mother/lefList.png") no-repeat;
+    padding-top: 140px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.smart-mother-left-list li a{
+    height: 70px;
+    padding-left:30px;
+    font-size: 24px;
+    line-height: 70px;
+    color: #666;
+}
+
+.smart-mother-left-list li:hover a{
+    color: #ff790b;
+    cursor: pointer;
+}
+
+.smart-mother-left-list .active a{
+    color: #ff790b;
+}
+
+.smart-mother-right-content{
+    width: 1210px;
+    margin-right: 160px;
+    margin-top: 50px;
+}
+
+.smart-mother-right-content h3{
+    font-size: 28px;
+    font-family: "PingFang SC";
+    color: #333;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.smart-mother-right-content p{
+    font-size: 18px;
+    color: #666;
+}
+
+.smart-mother-right-content .samrt-mother-img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
